@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1169</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+  background-color: #414141;
+	color: rgb(238, 238, 236);
+}
+QMainWindow::separator {
+  background-color: #CA3E47;
+}
+QMainWindow::separator:hover {
+  background-color: #282a36;
+}
+QMenuBar::item::selected {
+  background-color: #CA3E47;
+}
+QMenuBar::item::pressed {
+  background-color: #CA3E47;
+}
+QMenu::item::selected {
+  background-color: #CA3E47;
+}
+QMenu::item::pressed {
+  background-color: #CA3E47;
+}
+QToolBar {
+  background-color: #313131;
+  color: rgb(238, 238, 236);
+}
+QMenuBar {
+  background-color: #525252;
+  color: rgb(238, 238, 236);
+}
+QMenu {
+  background-color: #525252;
+  color: rgb(238, 238, 236);
+}
+QToolBox {
+
+}
+
+QToolBox:selected {
+
+}
+
+QToolBox::tab {
+
+}
+
+QToolBox::tab:disabled {
+}
+
+QToolBox::tab:selected {
+ 
+}
+
+QToolBox::tab:selected:disabled {
+
+}
+
+QToolBox::tab:!selected {
+
+}
+
+QToolBox::tab:!selected:disabled {
+
+}
+
+QToolBox::tab:hover {
+
+}
+
+QToolBox QScrollArea QWidget QWidget {
+
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: #313131;
+color: #f8f8f2;</string>
+          </property>
+          <property name="text">
+           <string>Devices :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableView" name="tableView_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: #313131;
+color: #f8f8f2;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>62</number>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>62</number>
+          </attribute>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="styleSheet">
+         <string notr="true">background-color: #313131;
+color: #f8f8f2;</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_3">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Read Commands : </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_2">
+                <property name="text">
+                 <string>Previous Page</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="sources.qrc">
+                  <normaloff>:/imgs/left.png</normaloff>:/imgs/left.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="text">
+                 <string>Next Page</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="sources.qrc">
+                  <normaloff>:/imgs/right.png</normaloff>:/imgs/right.png</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableView" name="tableView">
+              <property name="styleSheet">
+               <string notr="true">background-color: #313131;
+color: #f8f8f2;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <attribute name="horizontalHeaderMinimumSectionSize">
+               <number>80</number>
+              </attribute>
+              <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="horizontalHeaderStretchLastSection">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Write Commands : </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="text">
+                 <string>Previous Page</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="sources.qrc">
+                  <normaloff>:/imgs/left.png</normaloff>:/imgs/left.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="text">
+                 <string>Next Page</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="sources.qrc">
+                  <normaloff>:/imgs/right.png</normaloff>:/imgs/right.png</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableView" name="tableView_3">
+              <property name="styleSheet">
+               <string notr="true">background-color: #313131;
+color: #f8f8f2;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <attribute name="horizontalHeaderMinimumSectionSize">
+               <number>80</number>
+              </attribute>
+              <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1169</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionNew"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuDevice">
+    <property name="title">
+     <string>Device</string>
+    </property>
+    <addaction name="actionAdd"/>
+    <addaction name="actionRemove"/>
+   </widget>
+   <widget class="QMenu" name="menuMODBUS">
+    <property name="title">
+     <string>Database</string>
+    </property>
+    <addaction name="actionREAD"/>
+    <addaction name="actionWRITE"/>
+    <addaction name="actionREAD_COILS"/>
+    <addaction name="actionFORCE_SINGLE_COIL"/>
+    <addaction name="actionREAD_INPUT"/>
+    <addaction name="actionEnum_Table"/>
+    <addaction name="actionBreakers_Table"/>
+   </widget>
+   <widget class="QMenu" name="menuCommunication">
+    <property name="title">
+     <string>Communication</string>
+    </property>
+    <addaction name="actionTCP_IP"/>
+    <addaction name="actionSerial_Port"/>
+   </widget>
+   <widget class="QMenu" name="menuLog">
+    <property name="title">
+     <string>Log AND Control</string>
+    </property>
+    <addaction name="actionRecord"/>
+    <addaction name="actionView_Property"/>
+    <addaction name="actionControl"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuDevice"/>
+   <addaction name="menuMODBUS"/>
+   <addaction name="menuCommunication"/>
+   <addaction name="menuLog"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionNew"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionAdd"/>
+   <addaction name="actionREAD"/>
+   <addaction name="actionWRITE"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/imgs/download_23804.png</normaloff>:/imgs/download_23804.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Project</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/imgs/folder_23803.png</normaloff>:/imgs/folder_23803.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/imgs/upload_23785.png</normaloff>:/imgs/upload_23785.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/imgs/frames_23686.png</normaloff>:/imgs/frames_23686.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/imgs/x_23811.png</normaloff>:/imgs/x_23811.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="actionREAD">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/imgs/clipboard_23831.png</normaloff>:/imgs/clipboard_23831.png</iconset>
+   </property>
+   <property name="text">
+    <string>READ</string>
+   </property>
+  </action>
+  <action name="actionWRITE">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/imgs/compose_23855.png</normaloff>:/imgs/compose_23855.png</iconset>
+   </property>
+   <property name="text">
+    <string>WRITE</string>
+   </property>
+  </action>
+  <action name="actionREAD_COILS">
+   <property name="text">
+    <string>READ COILS</string>
+   </property>
+  </action>
+  <action name="actionFORCE_SINGLE_COIL">
+   <property name="text">
+    <string>FORCE SINGLE COIL</string>
+   </property>
+  </action>
+  <action name="actionREAD_INPUT">
+   <property name="text">
+    <string>READ INPUT</string>
+   </property>
+  </action>
+  <action name="actionEnum_Table">
+   <property name="text">
+    <string>Enum Table</string>
+   </property>
+  </action>
+  <action name="actionTCP_IP">
+   <property name="text">
+    <string>TCP/IP</string>
+   </property>
+  </action>
+  <action name="actionSerial_Port">
+   <property name="text">
+    <string>Serial Port</string>
+   </property>
+  </action>
+  <action name="actionRecord">
+   <property name="text">
+    <string>Record Property</string>
+   </property>
+  </action>
+  <action name="actionView_Property">
+   <property name="text">
+    <string>View Property</string>
+   </property>
+  </action>
+  <action name="actionControl">
+   <property name="text">
+    <string>Control</string>
+   </property>
+  </action>
+  <action name="actionBreakers_Table">
+   <property name="text">
+    <string>Breakers Table</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="sources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
